@@ -1,0 +1,37 @@
+{include file="header.tpl.html"}
+<script src="/fundo/xo/xo.js"></script>
+<h1 class="bg-primary" style="text-align: center">TicTacToe</h1>
+<div class="alert alert-dismissible alert-warning hide text-center" id="warning" role="alert">
+	<div id="text-warning">&nbsp;</div>
+</div>
+<div class="alert alert-dismissible alert-danger hide text-center" id="danger" role="alert">
+	<div id="text-danger">&nbsp;</div>
+</div>
+<div class="alert alert-dismissible alert-success hide text-center" id="success" role="alert">
+	<div id="text-success">&nbsp;</div>
+</div>
+<div class="well text-center" style="margin: 2%">
+	<div class="row" style="margin-top: 1%; margin-bottom: 1%">
+		<button class="btn btn-default col-xs-offset-3 col-xs-2" id="b1" onclick="xo(1);">&nbsp;</button>
+		<button class="btn btn-default col-xs-2" id="b2" onclick="xo(2);">&nbsp;</button>
+		<button class="btn btn-default col-xs-2" id="b3" onclick="xo(3);">&nbsp;</button>
+	</div>
+	<div class="row" style="margin-top: 1%; margin-bottom: 1%">
+		<button class="btn btn-default col-xs-offset-3 col-xs-2" id="b4" onclick="xo(4);">&nbsp;</button>
+		<button class="btn btn-default col-xs-2" id="b5" onclick="xo(5);">&nbsp;</button>
+		<button class="btn btn-default col-xs-2" id="b6" onclick="xo(6);">&nbsp;</button>
+	</div>
+	<div class="row" style="margin-top: 1%; margin-bottom: 1%">
+		<button class="btn btn-default col-xs-offset-3 col-xs-2" id="b7" onclick="xo(7);">&nbsp;</button>
+		<button class="btn btn-default col-xs-2" id="b8" onclick="xo(8);">&nbsp;</button>
+		<button class="btn btn-default col-xs-2" id="b9" onclick="xo(9);">&nbsp;</button>
+	</div>
+	<div class="row">
+		<button class="btn btn-default btn-info col-xs-offset-3 col-xs-6" style="margin-top: 1%; margin-bottom: 1%" id="reset" onclick="resetXo();">Start</button>
+	</div>
+	<div class="row">
+		<button class="btn btn-default btn-primary col-xs-offset-3 col-xs-6" style="margin-top: 1%; margin-bottom: 1%" id="confirm"
+		 onclick="confirmMove();">Confirm</button>
+	</div>
+</div>
+{include file="footer.tpl.html"}

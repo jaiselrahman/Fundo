@@ -1,0 +1,31 @@
+.nav-item {
+    background-color: white;
+}
+
+.nav-item>li>a:link {
+    color: white;
+    background-color: rgb(31, 91, 141);
+}
+
+.nav-item>li>a:visited {
+    color: white;
+}
+
+.navbar-nav.nav-item>li>a:hover {
+    color: rgb(31, 91, 141);
+    background-color: #ECECEC;
+}
+
+li.activated>a:link {
+    color: rgb(31, 91, 141);
+    background-color: white;
+}
+
+li.activated>a:visited {
+    color: rgb(31, 91, 141);
+}
+
+.navbar-nav.nav-item>li.activated>a:hover {
+    color: rgb(31, 91, 141);
+    background-color: #ECECEC;
+}
